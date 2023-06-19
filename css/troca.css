@@ -1,0 +1,127 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: rgb(58, 18, 97);
+}
+
+main{
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    display: flex;
+    justify-content: center; /* Alinhamento horizontal */
+    align-items: center;
+}
+
+.jogo{
+    width: fit-content;
+    margin: auto ;
+    align-items: center;
+
+}
+
+
+
+#pastnames{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: blueviolet;
+    max-width: 600px;
+    min-width: 50px;
+    padding: 10px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: rgb(175, 111, 235);
+    justify-content: center;
+    visibility: hidden;
+
+
+
+}
+
+.textoAlt{
+    margin-left: 10px;
+    padding: 3px 20px 3px 20px;
+    margin-bottom: 10px;
+    background-color: rgb(175, 111, 235);
+    border-radius: 10px;
+    text-align: center;
+    font-family: "Berlin Sans FB", "Bauhaus 93";
+    font-size: 16px; text-transform: uppercase;
+    color: #fff;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff,
+                 0 0 15px #fff, 0 0 20px #0600a7,
+                 0 0 35px #0600a7, 0 0 40px #0600a7,
+                 0 0 50px #0600a7, 0 0 75px #0600a7;
+}
+
+.sendBox{
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color: rgb(107, 6, 201);
+    display: flex;
+    width: fit-content;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #fff, 0 0 10px #fff,
+                 0 0 15px #fff, 0 0 20px #cc3ed4,
+                 0 0 35px #cc3ed4, 0 0 40px #cc3ed4,
+                 0 0 50px #cc3ed4, 0 0 75px #cc3ed4;
+
+}
+
+.jogo input{
+    background-color: rgb(175, 111, 235);
+    border: none;
+    border-radius: 10px;
+    padding-left: 10px;
+    margin: 0px 10px;
+    box-shadow: 
+    0px 1px 3px rgba(000,000,000,0.5),
+    inset 0px 0px 2px rgba(255,255,255,1);
+    text-align: center;
+    font-family: "Berlin Sans FB", "Bauhaus 93";
+    font-size: 16px; text-transform: uppercase;
+    margin: 0px 10px;
+    color: #000000;
+    text-shadow: 0 0 5px #0600a7, 0 0 10px #0600a7,
+                 0 0 15px #0600a7, 0 0 20px #FFF,
+                 0 0 35px #FFF, 0 0 40px #FFF,
+                 0 0 50px #FFF, 0 0 75px #FFF;
+}
+
+.jogo button{
+    background-color: blueviolet;
+    border-radius: 10px;
+    box-shadow: 
+    0px 1px 3px rgba(000,000,000,0.5),
+    inset 0px 0px 2px rgba(255,255,255,1);
+    text-align: center;
+    font-family: "Berlin Sans FB", "Bauhaus 93";
+    font-size: 16px; text-transform: uppercase;
+    margin: 0px 10px;
+    padding: 0px 6px;
+    color: #000000;
+    text-shadow: 0 0 5px #0600a7, 0 0 10px #0600a7,
+                 0 0 15px #0600a7, 0 0 20px #FFF,
+                 0 0 35px #FFF, 0 0 40px #FFF,
+                 0 0 50px #FFF, 0 0 75px #FFF;
+}
+
+#input{
+
+    text-align: center;
+    font-family: "Berlin Sans FB", "Bauhaus 93";
+    font-size: 16px; text-transform: uppercase;
+    margin: 0px 10px;
+    color: #000000;
+    text-shadow: 0 0 5px #0600a7, 0 0 10px #0600a7,
+                 0 0 15px #0600a7, 0 0 20px #FFF,
+                 0 0 35px #FFF, 0 0 40px #FFF,
+                 0 0 50px #FFF, 0 0 75px #FFF;
+
+
+}

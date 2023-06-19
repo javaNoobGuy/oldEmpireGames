@@ -7,6 +7,7 @@ function start(){
     let input = document.getElementById("input");
     input.innerHTML = '';
 
+
     let inputElement = document.createElement('input');
     inputElement.type = "text";
     inputElement.id = "change";
@@ -31,10 +32,41 @@ function addWord(){
     console.log(newName);
     namesChanged.push(newName);
 
-    let divTexto = document.createElement('div');
-    divTexto.className = "textoAlt";
-    divTexto.innerText = newName;
-    pastnames.append(divTexto);
+    console.log("altura" + pastnames.clientHeight);
+
+    pastnames.innerHTML = "";
+    pastnames.style.visibility = "visible";
+
+    for(let i = 0; i < namesChanged.length; i++){
+
+        let divTexto = document.createElement('div');
+        divTexto.className = "textoAlt";
+        divTexto.innerText = namesChanged[i];
+        pastnames.append(divTexto);
+
+    }
+
+    if(pastnames.clientHeight > 222){
+        let newVec = []
+        for(let i = Math.floor(namesChanged.length/2) - 1; i < namesChanged.length; i++){
+
+            newVec.push(namesChanged[i]);
+
+        }
+
+        namesChanged = newVec;
+
+        pastnames.innerHTML = "";
+        
+        for(let i = 0; i < namesChanged.length; i++){
+
+            let divTexto = document.createElement('div');
+            divTexto.className = "textoAlt";
+            divTexto.innerText = namesChanged[i];
+            pastnames.append(divTexto);
+
+        }
+    }
 
     input.value = '';
     inputDiv.innerHTML = '';

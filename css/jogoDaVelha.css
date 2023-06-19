@@ -1,21 +1,39 @@
-body{
+
+*{
+    margin: 0;
+}
+
+*, ::after, ::before {
+    box-sizing: content-box; 
+}
+
+#othersJogos{
+    margin: 0 auto;
+}
+#back{
     background-color: #006969;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+} 
+
+main{
+    display: block;
 }
 
 #jogo{
-
-    width: 603px;
-    height: 603px;
+    width: 100%;
+    height: 100%;
+    max-width: 303px;
+    max-height: 303px;
     border: solid 3px;
     display: inline-block;
-    float: left;
     background-color: white;
 
 }
 
 #resultado{
     margin-left: 30px;
-    float: left;
 }
 
 #resposta{
@@ -27,21 +45,23 @@ body{
 
 .linha{
 
-    height: 200px;
+    height: 100px;
     border-bottom: solid 1px;
 
 }
 
 .casa{
-    width: 200px;
+    width: 100px;
     height: 100%;
     border-right: solid 1px;
+    display:flex;
+    align-self: center;
     float: left;
 }
 
 .casa img{
-    width: 90%;
-    margin-left: auto;
+    padding: 10px;
+    margin: 0 auto;
 }
 
 .xis{

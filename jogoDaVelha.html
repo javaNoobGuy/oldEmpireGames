@@ -1,98 +1,176 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 
     <link rel="stylesheet" href="css/jogoDaVelha.css">
 
     <title>Jogo da Velha</title>
 </head>
+
 <body onload="recomeca()">
-    
+
+    <header>
+
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img src="images/knight-logo-png-9.jpg" width="50px" alt="">IMPERIAL GAMING</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                  </li>
+
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search Games" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+          <button type="button" class="btn btn-primary btn-sm">Home</button>
+          <button type="button" class="btn btn-primary btn-sm">Jogo da Velha</button>
+          <button type="button" class="btn btn-primary btn-sm">Troca Palavra</button>
+          <button type="button" class="btn btn-primary btn-sm">Jogo da Forca</button>
+          <button type="button" class="btn btn-primary btn-sm">Sky War</button>
+
+
+
+    </header>
+
     <main>
 
-        <div id="jogo">
+        <div class="row">
+            <div class="col" id="back">
 
-            <div class="linha">
-                <div class="casa" id="casa0" onclick="verifica(0)">
+                <div id="jogo">
 
-                    <img src="" alt="" id="img0">
-
-                </div>
-
-                <div class="casa" id="casa1" onclick="verifica(1)">
-
-                    <img src="" alt="" id="img1">
-
-                </div>
-
-                <div class="casa" id="casa2" onclick="verifica(2)">
-
-                    <img src="" alt="" id="img2">
-
-                </div>
-            </div>
-
-            <div class="linha">
-
-                <div class="casa" id="casa3" onclick="verifica(3)">
-
-                    <img src="" alt="" id="img3">
-
-                </div>
-                <div class="casa" id="casa4" onclick="verifica(4)">
-
-                    <img src="" alt="" id="img4">
-
-                </div>
-                <div class="casa" id="casa5" onclick="verifica(5)">
-
-                    <img src="" alt="" id="img5">
-
-                </div>
-
-
-            </div>
-            <div class="linha">
-
-                <div class="casa" id="casa6" onclick="verifica(6)">
-
-                    <img src="" alt="" id="img6">
+                    <div class="linha">
+                        <div class="casa" id="casa0" onclick="verifica(0)">
+    
+                            <img src="" alt="" id="img0">
+    
+                        </div>
+    
+                        <div class="casa" id="casa1" onclick="verifica(1)">
+    
+                            <img src="" alt="" id="img1">
+    
+                        </div>
+    
+                        <div class="casa" id="casa2" onclick="verifica(2)">
+    
+                            <img src="" alt="" id="img2">
+    
+                        </div>
+                    </div>
                     
+    
+                    <div class="linha">
+    
+                        <div class="casa" id="casa3" onclick="verifica(3)">
+    
+                            <img src="" alt="" id="img3">
+    
+                        </div>
+                        <div class="casa" id="casa4" onclick="verifica(4)">
+    
+                            <img src="" alt="" id="img4">
+    
+                        </div>
+                        <div class="casa" id="casa5" onclick="verifica(5)">
+    
+                            <img src="" alt="" id="img5">
+    
+                        </div>
+    
+    
+                    </div>
+                    <div class="linha">
+    
+                        <div class="casa" id="casa6" onclick="verifica(6)">
+    
+                            <img src="" alt="" id="img6">
+    
+                        </div>
+    
+                        <div class="casa" id="casa7" onclick="verifica(7)">
+    
+                            <img src="" alt="" id="img7">
+    
+                        </div>
+                        <div class="casa" id="casa8" onclick="verifica(8)">
+    
+                            <img src="" alt="" id="img8">
+    
+                        </div>
+    
+                    </div>
+    
+                </div>
+    
+                <div id="resultado" >
+    
+                    <p id="resposta">RESULTADO: </p>
+                    <br>
+                    <p id="xis" class="xis">PONTOS X: 0</p>
+                    <p id="bola" class="bola">PONTOD O: 0</p>
+                    <p id="velha" class="velha">VELHA...: 0</p>
+                    <form>
+    
+                        <input type="button" id="btnNovo" value="NOVO JOGO" onclick="recomeca()">
+    
+                    </form>
+    
+    
                 </div>
 
-                <div class="casa" id="casa7" onclick="verifica(7)">
-
-                    <img src="" alt="" id="img7">
-
-                </div>
-                <div class="casa" id="casa8" onclick="verifica(8)">
-
-                    <img src="" alt="" id="img8">
-
-                </div>
 
             </div>
+            
 
         </div>
 
-        <div id="resultado">
-
-            <p id="resposta">RESULTADO: </p>
-            <br>
-            <p id="xis" class="xis">PONTOS X: 0</p>
-            <p id="bola" class="bola">PONTOD O: 0</p>
-            <p id="velha" class="velha">VELHA...: 0</p>
-            <form>
-
-                <input type="button" id="btnNovo" value="NOVO JOGO" onclick="recomeca()">
-
-            </form>
-
-
-        </div>
+        <div class="row" id="othersJogos">
+            <div class="col-sm-3 mb-3 mb-sm-0">
+                <div class="card" style="width: 18rem;">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+            </div>
+          </div>
 
 
     </main>
@@ -103,4 +181,5 @@
 
     <script src="js/jogoDaVelha.js"></script>
 </body>
+
 </html>

@@ -3,7 +3,7 @@ body{
     margin: 0;
 }
 
-button{
+#jogo button{
 
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
@@ -21,12 +21,12 @@ button{
 
 }
 
-button:hover{
+#jogo button:hover{
     background: linear-gradient(to top, #ffffff 0%,
     #ebebeb 50%, #dbdbdb 50%, #b5b5b5);
 }
 
-button:disabled{
+#jogo button:disabled{
     background: #b5b2b2;
     color: #cbcbcb;
 }
@@ -92,7 +92,7 @@ button:disabled{
     color: forestgreen;
 }
 
-input{
+#jogo input{
 
     margin-left: 1px;
     text-align: center;
