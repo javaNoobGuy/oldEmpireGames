@@ -10,9 +10,12 @@
 #othersJogos{
     margin: 0 auto;
 }
+
 #back{
     background-color: #006969;
     display: flex;
+    max-height: 606px;
+    height: fit-content;
     align-self: center;
     justify-content: center;
 } 
@@ -24,9 +27,8 @@ main{
 #jogo{
     width: 100%;
     height: 100%;
-    max-width: 303px;
-    max-height: 303px;
-    border: solid 3px;
+    max-width: 603px;
+    max-height: 603px;
     display: inline-block;
     background-color: white;
 
@@ -45,13 +47,13 @@ main{
 
 .linha{
 
-    height: 100px;
+    height: 200px;
     border-bottom: solid 1px;
 
 }
 
 .casa{
-    width: 100px;
+    width: 200px;
     height: 100%;
     border-right: solid 1px;
     display:flex;
