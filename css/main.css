@@ -1,0 +1,11 @@
+    
+.buttons{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+header button{
+    margin-left: 2px;
+}
