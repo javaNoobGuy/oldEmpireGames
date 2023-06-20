@@ -1,0 +1,87 @@
+.card-produto{
+    min-width: 152px;
+    /*height: 647px;*/
+    /*margin-right: 30px;*/
+    background-color:#00B4E0;
+    border-radius: 11px;
+    border:1px solid #163C46;
+    box-shadow: 4px 4px 5px #163C46;
+    transition: 0.5s ease-in all;
+    /*border: 1px solid red;*/
+}
+
+.card-produto:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.hide1{
+    visibility: hidden;
+}
+
+.card-produto .textos{
+    padding-left: 9px;
+    color: #1C4F5C;
+    font-weight: 600;
+    font-size: 20px;
+    font-family: Poppins, sans-serif;
+}
+
+.cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: center;
+}
+
+.card-produto .texto-precoAntigo{
+    font-weight: 500;
+    font-size: 14px;
+    color: rgb(99, 99, 99);
+    text-decoration: line-through;
+}
+
+.card-produto .end-card{
+    text-align: center;
+    background-color: #008BAD;
+    border-bottom-left-radius: 11px;
+    border-bottom-right-radius: 11px;
+}
+
+.card-produto{
+    width: 178px;
+    margin-left: 20px;
+}
+
+.card-produto a{
+    padding: 0px 51px 0px 51px;
+    background-color: #008BAD; 
+    border-bottom-left-radius: 11px;
+    border-bottom-right-radius: 11px;
+    transition: 0.5s all ease;
+
+    color: #1C4F5C;
+    font-weight: 600;
+    font-size: 18px;
+    font-family: Poppins, sans-serif;
+
+}
+
+.card-produto a:hover{
+    background: rgb(13, 145, 145);
+    cursor: pointer;
+}
+
+
+.card-produto .texto-nome{
+    padding-bottom: 25px;
+    
+}
+
+.card-produto img{
+    width: 135px;
+    height: 135px;
+    margin-top: 5px;
+    margin-left: 20px;
+    border-radius: 20px;
+}
