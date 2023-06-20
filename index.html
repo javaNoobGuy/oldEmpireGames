@@ -17,7 +17,7 @@
 
     <header>
 
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg .bg-secondary">
             <div class="container-fluid">
               <a class="navbar-brand" href="#"><img src="images/knight-logo-png-9.jpg" width="50px" alt="">IMPERIAL GAMING</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -39,10 +39,10 @@
           <div class="buttons">
 
             <button type="button" class="btn btn-primary btn-sm" onclick="location.href='index.html'">Home</button>
-            <button type="button" class="btn btn-primary btn-sm">Jogo da Velha</button>
-            <button type="button" class="btn btn-primary btn-sm">Troca Palavra</button>
-            <button type="button" class="btn btn-primary btn-sm">Jogo da Forca</button>
-            <button type="button" class="btn btn-primary btn-sm">Sky War</button>
+            <button type="button" class="btn btn-primary btn-sm" onclick="location.href='jogoDaVelha.html'">Jogo da Velha</button>
+            <button type="button" class="btn btn-primary btn-sm" onclick="location.href='trocaPalavra.html'">Troca Palavra</button>
+            <button type="button" class="btn btn-primary btn-sm" onclick="location.href='forca.html'">Jogo da Forca</button>
+            <button type="button" class="btn btn-primary btn-sm" onclick="location.href='https://ballonline.javanoobguy.repl.co/'">Sky War</button>
 
           </div>
 
@@ -51,44 +51,44 @@
     <main>
 
 
-        <div class="row">
+        <div class="row" id="cardsGame">
             <div class="col-sm-3 mb-3 mb-sm-0">
                 <div class="card" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="...">
+                    <img src="images/capaForca.png" class="card-img-top" alt="...">
                     <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                      <h5 class="card-title">Forca</h5>
+                      <p class="card-text">Salve o patolino.</p>
+                      <a href="#" class="btn btn-primary" onclick="location.href='forca.html'">Jogar</a>
                     </div>
                   </div>
             </div>
             <div class="col-sm-3">
                 <div class="card" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="...">
+                    <img src="images/capaTroca.png" class="card-img-top" alt="...">
                     <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                      <h5 class="card-title">Troca Palavra</h5>
+                      <p class="card-text">crie nome de filmes, séries, personagens.</p>
+                      <a href="#" class="btn btn-primary" onclick="location.href='trocaPalavra.html'">Jogar</a>
                     </div>
                   </div>
             </div>
             <div class="col-sm-3">
                 <div class="card" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="...">
+                    <img src="images/capaVelha.png" class="card-img-top" alt="...">
                     <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                      <h5 class="card-title">Jogo da Velha</h5>
+                      <p class="card-text">conecte 3 bolinhas ou 3 xis</p>
+                      <a href="#" class="btn btn-primary" onclick="location.href='jogoDaVelha.html'">Jogar</a>
                     </div>
                   </div>
             </div>
             <div class="col-sm-3">
                 <div class="card" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="...">
+                    <img src="images/skyWarCapa.png" class="card-img-top" alt="...">
                     <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                      <h5 class="card-title">Sky Wars</h5>
+                      <p class="card-text">destrua os alvos que aparecem no centro do mapa</p>
+                      <a class="btn btn-primary" onclick="location.href='https://ballonline.javanoobguy.repl.co/'">Jogar</a>
                     </div>
                   </div>
             </div>
@@ -110,7 +110,7 @@
                   <li><a href="forca.html">Jogo da Forca</a></li>
                   <li><a href="jogoDaVelha.html">Jogo da Velha</a></li>
                   <li><a href="trocaPalavra.html">Troca Palavra</a></li>
-                  <li><a href="skyWars.html">Sky Wars</a></li>
+                  <li><a href="https://ballonline.javanoobguy.repl.co/">Sky Wars</a></li>
 
               </ul>
 
