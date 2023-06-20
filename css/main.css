@@ -1,11 +1,109 @@
-    
+*{
+    padding: 0;
+    margin: 0;
+}
 .buttons{
     display: flex;
     align-self: center;
     justify-content: center;
     margin: 0 auto;
+    background-color: rgb(41, 41, 41);
+}
+
+.navbar{
+    background-color: rgb(58, 57, 57);
+}
+
+header *{
+    background-color: rgb(58, 57, 57);
+}
+
+header a{
+    color: none;
+}
+
+.buttons button{
+    background-color: rgb(122, 122, 122);
+    border-color: rgb(122, 122, 122);
 }
 
 header button{
     margin-left: 2px;
+}
+
+.copyRight{
+    background-color: rgb(85, 85, 85);
+    padding-bottom: 36px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    height: 100%;
+    
+}
+
+.copyRight p{
+    text-align: center;
+    color: white;
+    padding-top: 23px;
+    margin-left: 7px;
+    margin-right: 7px;
+
+}
+
+main{
+    
+    padding-bottom: 270px;
+}
+
+#adress{
+    margin-left: 85px;
+    margin-right: 67px;
+}
+
+footer{
+    background-color: rgb(58, 57, 57);
+    width: 100%;
+    position: absolute;
+    margin: auto;
+}
+
+.mapaLinks{
+    display: flex;
+    justify-content: center;
+    padding-top: 19px;
+    padding-bottom: 19px;
+}
+
+.lista-rodape{
+    width: 148px;
+}
+
+.lista-rodape h2{
+    margin-bottom: 21px;
+    color: white;
+    width: 100%;
+    font-weight: 400;
+    font-size: 20px;
+    font-family: Poppins, sans-serif;
+}
+
+.lista-rodape li a{
+    margin-bottom: 5px;
+    color: white;
+    font-weight: 400;
+    font-size: 14px;
+    font-family: Poppins, sans-serif;
+    text-decoration: none;
+}
+
+.lista-rodape li a:hover{
+
+    color: white;
+    text-decoration: underline;
+
+
+}
+
+.lista-rodape ul{
+    list-style-type: none;
 }

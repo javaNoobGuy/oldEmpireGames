@@ -11,6 +11,10 @@
     margin: 0 auto;
 }
 
+main{
+    background-color: #006969;
+}
+
 #back{
     background-color: #006969;
     display: flex;
